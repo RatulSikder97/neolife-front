@@ -1,1 +1,96 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    position: fixed;
+    overflow: hidden;
+    inset: 0;
+    scroll-behavior: smooth;
+}
+
+$colors :(
+    "accent": "#40b4b4"
+);
+
+
+.info-header {
+    padding: 30px;
+}
+
+.list-view {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding: 20px 30px;
+
+    .list-item {
+        .title {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #888;
+
+            i {
+                margin-right: 5px;
+            }
+        }
+    }
+}
+
+.task {
+    border: 2px solid #000;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+
+    .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+        margin-top: 14px;
+
+        .tag {
+            padding: 5px 10px;
+            background-color: rgb(54, 255, 228);
+            border-radius: 24px;
+        }
+    }
+}
+
+
+.btn {
+    border: none;
+    outline: none;
+    background-color: transparent;
+
+    &-fav {
+        height: 45px;
+        width: 45px;
+        border-radius: 50%;
+        background-color: #ccc;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+
+        &-primary {
+            background-color: #40b4b4;
+            color: #fff;
+        }
+
+        &-big {
+            height: 55px;
+            width: 55px;
+            font-size: 28px;
+        }
+        img {
+            width: 20px;
+        }
+    }
+}
