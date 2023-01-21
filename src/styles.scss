@@ -19,6 +19,9 @@ $colors :(
 
 .info-header {
     padding: 30px;
+    position: sticky;
+    top: 0;
+    background: linear-gradient(to bottom, #fff 65%, transparent);
 }
 
 .list-view {
@@ -93,4 +96,28 @@ $colors :(
             width: 20px;
         }
     }
+}
+
+.add-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #47a7f5;
+}
+
+
+/* Ripple effect */
+.ripple {
+    background-position: center;
+    transition: background 0.8s;
+}
+
+.ripple:hover {
+    background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+}
+
+.ripple:active {
+    background-color: #6eb9f7;
+    background-size: 100%;
+    transition: background 0s;
 }
