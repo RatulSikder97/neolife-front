@@ -4,68 +4,8 @@
 </div>
 
 <div class="list-view">
-    <div class="list-item task">
-        <h3 class="title">Task Name Will Go Here</h3>
-        <p class="subtitle">
-            <i class="bi bi-clock"></i>
-            <span class="date-time">21/01/2023 15:00</span>
-        </p>
-        <div class="tags">
-            <p class="tag">#Reminder</p>
-            <p class="tag">#Reminder</p>
-            <p class="tag">#Reminder</p>
-        </div>
-    </div>
-    <div class="list-item task">
-        <h3 class="title">Task Name Will Go Here</h3>
-        <p class="subtitle">
-            <i class="bi bi-clock"></i>
-            <span class="date-time">21/01/2023 15:00</span>
-        </p>
-        <div class="tags">
-            <p class="tag">#Reminder</p>
-            <p class="tag">#Reminder</p>
-            <p class="tag">#Reminder</p>
-        </div>
-    </div>
-    <div class="list-item task">
-        <h3 class="title">Task Name Will Go Here</h3>
-        <p class="subtitle">
-            <i class="bi bi-clock"></i>
-            <span class="date-time">21/01/2023 15:00</span>
-        </p>
-        <div class="tags">
-            <p class="tag">#Reminder</p>
-            <p class="tag">#Reminder</p>
-            <p class="tag">#Reminder</p>
-        </div>
-    </div>
-    <div class="list-item task">
-        <h3 class="title">Task Name Will Go Here</h3>
-        <p class="subtitle">
-            <i class="bi bi-clock"></i>
-            <span class="date-time">21/01/2023 15:00</span>
-        </p>
-        <div class="tags">
-            <p class="tag">#Reminder</p>
-            <p class="tag">#Reminder</p>
-            <p class="tag">#Reminder</p>
-        </div>
-    </div>
-    <div class="list-item task">
-        <h3 class="title">Task Name Will Go Here</h3>
-        <p class="subtitle">
-            <i class="bi bi-clock"></i>
-            <span class="date-time">21/01/2023 15:00</span>
-        </p>
-        <div class="tags">
-            <p class="tag">#Reminder</p>
-            <p class="tag">#Reminder</p>
-            <p class="tag">#Reminder</p>
-        </div>
-    </div>
-    <div class="list-item task">
-        <h3 class="title">Task Name Will Go Here</h3>
+    <div class="list-item task"  *ngFor="let item of data;">
+        <h3 class="title">{{item.title}}</h3>
         <p class="subtitle">
             <i class="bi bi-clock"></i>
             <span class="date-time">21/01/2023 15:00</span>
