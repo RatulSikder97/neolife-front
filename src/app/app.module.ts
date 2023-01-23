@@ -5,9 +5,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TaskDetailsComponent } from './components/task-details/task-details.component';
 import { HomeComponent } from './components/home/home.component';
+import { AddTaskComponent } from './components/add-task/add-task.component';
+import { AddEntryComponent } from './components/add-entry/add-entry.component';
 
 @NgModule({
-  declarations: [AppComponent, TaskDetailsComponent, HomeComponent],
+  declarations: [AppComponent, TaskDetailsComponent, HomeComponent, AddTaskComponent, AddEntryComponent],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
